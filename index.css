@@ -1,0 +1,259 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'tommy';
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'tommy';
+    src: url(fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf) format('opentype');
+}
+
+/* Configurando Area do inicio */
+.header {
+    height: 500px;
+    position: relative;
+}
+
+.img-entrada {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -420px;
+    left: 50%;
+    right: 50%;
+    background-color: #ffffff;
+    width: 1000px;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    padding-bottom: 20px;
+    border-radius: 4px;
+}
+
+.img-logo {
+    padding-left: 25px;
+    height: 60px;
+    width: 200px;
+    padding-right: 350px;
+    position: relative;
+    top: 1px;
+}
+
+.menu ul {
+    flex-direction: row;
+    display: flex;
+
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgba(11, 0, 51, 0.486);
+    font-size: 20px;
+    font-family: 'tommy';
+    border-radius: 4px;
+    margin-right: 20px;
+    position: relative;
+    top: 17px;
+    right: 20px;
+    padding: 10px;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(1, 27, 31);
+    transition: 0.5s;
+    color: white;
+}
+
+.blocofeedback {
+    background-color: rgba(155, 155, 155, 0.329);
+    height: 100px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.titulo1 {
+    text-align: center;
+    padding-top: 30px;
+    color: rgba(0, 0, 0, 0.692);
+}
+
+/*Configurando Primeiro catalogo */
+
+.catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    grid-gap: 80px;
+    gap: 10px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    height: 490px;
+}
+
+.card-quartos {
+    background-color: rgb(255, 255, 255);
+    height: 460px;
+
+}
+
+.card-quartos h2,
+p {
+    padding-top: 4px;
+    color: rgba(0, 0, 0, 0.664);
+    text-indent: 0px;
+    padding-left: 5px;
+}
+
+
+.img-quarto {
+    width: 550px;
+    max-width: 550px;
+    object-fit: cover;
+
+}
+
+/*Configurando segundo catalogo */
+
+.segundo-catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    gap: 20px ;
+    justify-items: center;
+    background-color: rgba(151, 151, 151, 0.192);
+    height: 390px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.card2-quartos {
+    padding-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 340px;
+}
+
+.card2-quartos h2 {
+    padding-bottom: 3px;
+}
+
+.card2-quartos h2,p {
+    padding-top: 4px;
+    color: rgba(0, 0, 0, 0.664);
+    text-indent: 0px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+
+.card2-quartos img {
+    width: 340px;
+    height: 210px;
+    object-fit: cover;
+}
+
+/*Configurando Terceiro catalogo */
+.terceiro-catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    gap: 100px;
+    justify-items: center;
+    height: 400px;
+}
+
+
+.card-servicos img {
+    width: 160px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 1000px;
+    
+}
+
+.card-servicos h2{
+    text-align: center;
+}
+
+.card-servicos a{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top:15px;
+    border-radius: 19px;
+}
+
+.link-catalogo{
+    text-align: center;
+}
+
+.titulo2 {
+    padding-top: 30px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.692);
+    margin-bottom: 90px;
+}
+
+/* Configurando Terceiro Footer*/
+
+footer{
+    background-color: rgb(1, 27, 31);
+    width: 100%;
+    height: 300px;
+    
+}
+
+footer h2{
+    padding-bottom: 10px;
+    color: white;
+    padding-top: 30px;
+    padding-left: 80px;
+    height: 30px;
+    width: 100%;
+}
+.links{
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.links img{
+    width: 70px;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+aside{
+    background-color: black;
+    display: block;
+    color: white;
+    padding-left: 50px;
+    height: 19px;
+}
+aside p {
+    color: white;
+}
